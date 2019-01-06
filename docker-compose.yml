@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+  vue:
+    image: dockerize-vuejs-app-v4
+    container_name: myVue
+    volumes:
+      - "${HOST_DIR}:/app"
+    expose:
+      - 8080
+    ports:
+      - ${VUE_PORT}:8080
+    tty: true
