@@ -2,7 +2,7 @@ version: "3"
 
 services:
   vue:
-    image: dockerize-vuejs-app-v4
+    image: ${VUE_IMAGE}
     container_name: myVue
     volumes:
       - "${HOST_DIR}:/app"
